@@ -6,17 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/5fab82e19d.js" crossorigin="anonymous"></script>
     <style>
         .fotoperfil {
@@ -25,14 +21,60 @@
             max-width: 20%;
             border-radius: 50%;
         }
+        
+        .corPrimaria {
+            background-color: #000;
+        }
+        
+        .corSecundaria {
+            background-color: #363636;
+        }
+        
+        .p {
+            font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+            color: black !important;
+        }
+        
+        .icones {
+            padding-left: 5px;
+        }
+        
+        .titulosbrancos {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: uppercase;
+            font-weight: 700;
+            color: white
+        }
+        
+        .titulospretos {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: uppercase;
+            font-weight: 700;
+            color: black;
+        }
+        
+        .textobranco {
+            color: white !important;
+        }
+        
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+        
+        .textofooter {
+            margin: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Felipe Alexander</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light corSecundaria">
+        <a class="navbar-brand textobranco" href="#">Felipe Alexander</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -41,43 +83,41 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projetos</a>
+                    <a class="nav-link textobranco" href="#Meus-Projetos">Projetos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Mim</a>
+                    <a class="nav-link textobranco" href="#SobreMim">Sobre Mim</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link textobranco" href="#Contato">Contato</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center corPrimaria">
         <div class="container">
             <img class="fotoperfil" src="photo.jpg" alt="">
-            <h1 class="jumbotron-heading">Felipe Alexander</h1>
-            <p class="lead text-muted">Estudante de Sistemas de Informação Grande QUICK LEARNER!</p>
+            <h1 class="jumbotron-heading textobranco">Felipe Alexander</h1>
+            <p class="lead text-muted textobranco">Estudante de Sistemas de Informação. E um Grande QUICK LEARNER!</p>
             <p>
-                <a href="#" class="btn btn-dark my-2">Contato</a>
+
             </p>
-            <a href="https://www.linkedin.com/in/felipe-alexander-935715205/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/alexx_fender/"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/alexx-ander28/"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/felipe-alexander-935715205/"><i
+                    class="textobranco fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/alexx_fender/"><i class="textobranco icones fab fa-instagram"></i></a>
+            <a href="https://github.com/alexx-ander28/"><i class="textobranco icones fab fa-github"></i></a>
         </div>
     </section>
-    <div class="album py-5 bg-light">
+    <div class="album py-5 corPrimaria" id="Meus-Projetos">
         <div class="container">
-
+            <h2 class="jumbotron-heading text-center textobranco">MEUS PROJETOS:</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-                            src="html-css-json.jpg" data-holder-rendered="true">
+                    <div class="card mb-4 box-shadow corPrimaria">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="html-css-json.jpg" data-holder-rendered="true">
                         <div class="card-body">
-                            <p class="card-text">Projeto de um site utilizando as seguintes tecoologias></p>
-                            <ul>
+                            <p class="card-text textobranco">Projeto de um site utilizando as seguintes tecoologias:</p>
+                            <ul class="textobranco">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JAVASCRIPT</li>
@@ -94,13 +134,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="python.jpg" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
+                    <div class="card mb-4 box-shadow corPrimaria">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="python.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Projetos baseados na linguagem programação PYTHON.</p>
+                            <p class="card-text textobranco">Projetos baseados na linguagem de programação PYTHON.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
@@ -113,13 +150,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="php.png" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
+                    <div class="card mb-4 box-shadow corPrimaria">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="php.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Projetos baseados em PHP.</p>
+                            <p class="card-text textobranco">Projetos baseados em PHP.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
@@ -133,13 +167,10 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="mysql.png" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
+                    <div class="card mb-4 box-shadow corPrimaria">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="mysql.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Projetos baseados em banco de dados.</p>
+                            <p class="card-text textobranco">Projetos baseados em banco de dados.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
@@ -152,17 +183,13 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="aplicacoes.jpg" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
+                    <div class="card mb-4 box-shadow corPrimaria">
+                        <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="aplicacoes.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Aplicações básicas em estilos diferentes. Tais como:</p>
-                            <ul>
-                                <li>Calculadora</li>
-                                <li>Urna Eletronica</li>
-                                <li>Medidor de IMC</li>
+                            <p class="card-text textobranco">Aplicações básicas em estilos diferentes. Tais como:</p>
+                            <ul class="textobranco">
+                                <li>CALCULADORA</li>
+                                <li>URNA ELETRÔ NICA</li>
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
@@ -180,6 +207,28 @@
     </div>
     </div>
     </div>
+    <!--Sobre Mim-->
+    <section class="jumbotron text-center corPrimaria" id="SobreMim">
+        <div class="container">
+            <h2 class="jumbotron-heading textobranco">SOBRE MIM:</h2>
+            <p class="lead textobranco">Olá. Meu nome é Felipe Alexander e sou estudante de Sistemas de Informação. Estou começando agora no mercado e na área em si, mas sou uma pessoa que aprende rapido e possuo bastante curiosidade e disposição para aprender. Quero poder mostrar
+                meu potencial na prática. Deixarei meu email e contato no final da página!!!
+            </p>
+        </div>
+    </section>
+    <!--Contato-->
+    <section class="corPrimaria" id="Contato">
+        <div class="container-fluid">
+            <h3 style="padding-top: 60px;" class=" text-center textobranco ">Disponivel para oportunidades</h3>
+            <a href="mailto:lipexander1@gmail.com ">
+                <h4 style="padding-bottom: 60px; margin-bottom: 0px;" class="text-center textobranco ">👉lipexander1@gmail.com👈</h4>
+            </a>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="text-center corSecundaria textobranco textofooter ">
+        <p>@COPYRIGHT 2021@</p>
+    </footer>
 </body>
 
 </html>
